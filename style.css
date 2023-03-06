@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --yellow: #F3BD00;
+  --white: #f3f6f8;
+  --light-gray: #dee2e6;
+  --medium-gray: #757575;
+  --main-blue: #0C2B4B;
+  --dark-blue: #092139;
+  --main-font: "Work Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+.yellow-icon {
+  color: var(--yellow);
+}
+
+.top-contacts-container {
+  display: flex;
+  justify-content: space-between;
+  padding: .6em 3em;
+  background-color: var(--main-blue);
+}
+
+.top-contacts-container p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.top-contacts-left,
+.top-contacts-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.top-contacts-address,
+.top-contacts-time,
+.top-contacts-phone {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.top-contacts-sm a {
+  padding: 8px 12px 8px 8px;
+  border-right: 1px solid var(--medium-gray);
+  color: var(--yellow);
+}
+
+.top-contacts-sm a:hover {
+  opacity: 85%;
+  transition: .5s;
+}
+
+.top-contacts-sm a:nth-last-child(1) {
+  border: none;
+  padding-right: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 125px;
+  padding: 1.2em 3em;
+  border-right: 1px solid var(--light-gray);
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 2em 0;
+}
+
+.menu-list li a {
+  margin-right: 35px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+.menu-list li a:hover {
+  color: var(--yellow);
+  transition: 0.15s ease-in-out;
+}
+
+.menu-list li a:active {
+  color: var(--yellow);
+}
+
+.menu-button {
+  padding: 1.8em 3em;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--yellow);
+}
+
+.menu-button:hover {
+  background-color: #fdc90e;
+  transition: .5s;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url(img/banner.jpg) no-repeat top;
+  background-size: cover;
+
+}
+
+.banner-title {
+  padding: 0 12rem;
+  margin-bottom: 3rem;
+  font-size: 64px;
+  font-weight: bold;
+  font-weight: 700;
+  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+  color: var(--white);
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.banner-button {
+  padding: 1em 3em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+}
+
+.banner-button:hover {
+  transition: .5s;
+}
+
+.yellow {
+  color: var(--white);
+  background-color: var(--yellow);
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: row;
+  padding: 8em 4em;
+  margin: 0 5em;
+}
+
+.benefits-texts,
+.benefits-imgs {
+  padding: .5em;
+}
+
+.benefits-texts {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-subtitle {
+  margin-bottom: .5em;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+.section-title {
+  margin-bottom: 24px;
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--main-blue);
+}
+
+.section-text {
+  margin-bottom: 36px;
+}
+
+.benefits-texts p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--medium-gray);
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.list-item {
+  max-width: 45%;
+  padding: 12px 12px 12px 0;
+}
+
+.list-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list-item-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.square-icon {
+  color: var(--white);
+  background-color: var(--yellow);
+  padding: 10px;
+}
+
+.benefits-imgs {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 6em;
+}
+
+.benefits-big-img {
+  width: 35%;
+  height: 50%;
+  position: absolute;
+  margin-bottom: 3em;
+  background:
+    url(img/benefits-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.benefits-small-img {
+  position: relative;
+  top: -190px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  padding: 0 0 16px 16px;
+  background-color: #fff;
+}
