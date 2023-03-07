@@ -15,22 +15,19 @@
   margin: 0;
   padding: 0;
   font-family: var(--main-font);
-}
-
-.yellow-icon {
-  color: var(--main-yellow);
+  font-size: 16px;
 }
 
 .top-contacts-container {
   display: flex;
   justify-content: space-between;
-  padding: .6em 3em;
+  padding: 0 3rem;
   background-color: var(--main-blue);
 }
 
 .top-contacts-container p {
   margin: 0;
-  font-size: 14px;
+  font-size: .8rem;
   color: var(--white);
 }
 
@@ -38,7 +35,7 @@
 .top-contacts-right {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.8rem;
 }
 
 .top-contacts-address,
@@ -46,13 +43,21 @@
 .top-contacts-phone {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: .4rem;
+}
+
+.yellow-icon {
+  color: var(--main-yellow);
+}
+
+.top-contacts-sm {
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-contacts-sm a {
-  padding: 8px 12px 8px 8px;
+  padding: .75rem;
   border-right: 1px solid var(--medium-gray);
-  color: var(--main-yellow);
 }
 
 .top-contacts-sm a:hover {
@@ -71,9 +76,9 @@
   justify-content: space-between;
 }
 
-.top-logo {
-  width: 125px;
-  padding: 1.2em 3em;
+.top-nav-logo {
+  width: 135px;
+  padding: 1.25rem 3rem;
   border-right: 1px solid var(--light-gray);
 }
 
@@ -85,15 +90,14 @@
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 
 .menu-list li a {
-  margin-right: 35px;
-  font-size: 16px;
+  margin-right: 2.1rem;
   font-weight: 500;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--main-blue);
 }
 
@@ -107,11 +111,10 @@
 }
 
 .menu-button {
-  padding: 1.8em 3em;
-  font-size: 16px;
+  padding: 1.8rem 3rem;
   font-weight: 500;
-  border: none;
   cursor: pointer;
+  border: none;
   color: var(--white);
   background-color: var(--main-yellow);
 }
@@ -122,11 +125,11 @@
 }
 
 .banner-container {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 75vh;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
     url(img/banner.jpg) no-repeat top;
   background-size: cover;
@@ -136,22 +139,19 @@
 .banner-title {
   padding: 0 12rem;
   margin-bottom: 3rem;
-  font-size: 64px;
-  font-weight: bold;
-  font-weight: 700;
   text-align: center;
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+  font-size: 4rem;
+  font-weight: 700;
   color: var(--white);
 }
 
 .banner-buttons {
   display: flex;
-  gap: 30px;
+  gap: 1.8rem;
 }
 
 .banner-button {
-  padding: 1em 3em;
-  font-size: 16px;
+  padding: 1rem 3rem;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
@@ -172,30 +172,24 @@
 }
 
 .white-button {
+  color: var(--main-blue);
   background-color: var(--white);
 }
 
 .benefits-container {
   display: flex;
-  flex-direction: row;
-  padding: 8em 4em;
-  margin: 0 5em;
-}
-
-.benefits-texts,
-.benefits-imgs {
-  padding: .5em;
+  padding: 0 7.5rem;
+  margin-top: 6.2rem;
 }
 
 .benefits-texts {
-  width: 55%;
+  width: 47%;
   display: flex;
   flex-direction: column;
 }
 
 .section-subtitle {
-  margin-bottom: .5em;
-  font-size: 16px;
+  margin-bottom: .5rem;
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
@@ -203,163 +197,173 @@
 }
 
 .section-title {
-  margin-bottom: 24px;
-  font-size: 2.4em;
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--main-blue);
 }
 
 .section-text {
-  margin-bottom: 36px;
+  margin-bottom: 2.2rem;
 }
 
 .benefits-texts p {
-  font-size: 16px;
   line-height: 1.5;
   color: var(--medium-gray);
 }
 
 .list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .list-item {
-  max-width: 45%;
-  padding: 12px 12px 12px 0;
+  width: 45%;
+  padding: .7rem .7rem .7rem 0;
 }
 
 .list-item h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .list-item-title {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 16px;
+  gap: .9rem;
+  margin-bottom: 1rem;
 }
 
 .square-icon {
   color: var(--white);
   background-color: var(--main-yellow);
-  padding: 10px;
+  padding: .6rem;
 }
 
 .benefits-imgs {
-  width: 45%;
+  width: 53%;
+  padding-left: .5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding-top: 6em;
+  padding-top: 6rem;
 }
 
 .benefits-big-img {
-  width: 35%;
-  height: 50%;
+  width: 40%;
+  height: 45%;
   position: absolute;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   background:
     url(img/benefits-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .benefits-small-img {
-  position: relative;
-  top: -190px;
   width: 200px;
   height: 200px;
+  position: relative;
+  top: -190px;
   z-index: 1;
-  padding: 0 0 16px 16px;
+  padding: 0 0 1rem 1rem;
   background-color: #fff;
 }
 
 .team {
-  padding: 96px 12px;
+  padding: 0 7.5rem;
+  margin-top: 6.2rem;
   text-align: center;
 }
 
 .team-profiles {
-  margin: 0 65px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+.team-profiles :nth-child(1) {
+  padding-left: 0;
+}
+
+.team-profiles :nth-last-child(1) {
+  padding-right: 0;
+}
+
 .profile-picture {
   width: 100%;
-  box-sizing: border-box;
 }
 
 .profile-item {
-  padding: 12px;
+  padding: .7rem;
   display: flex;
   flex-direction: column;
 }
 
 .profile-information {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: var(--white);
 }
 
 .profile-name {
-  margin: 8px 0;
-  font-size: 20px;
+  margin: .5rem 0;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--main-blue);
 }
 
 .profile-position {
-  font-size: 16px;
   color: var(--medium-gray);
 }
 
 .bottom-nav {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px;
-  margin-top: 96px;
+  padding: 6.2rem 7.5rem;
+  margin-top: 6.2rem;
   background-color: var(--main-blue);
+}
+
+.bottom-nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.bottom-nav-logo {
+  width: 140px;
+  margin-bottom: 1.5rem;
 }
 
 .bottom-contacts-address,
 .bottom-contacts-phone,
 .bottom-contacts-email {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: .9rem;
+  margin-bottom: .9rem;
   font-style: normal;
   color: var(--white);
-}
-
-.bottom-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: var(--white);
-}
-
-.bottom-logo {
-  width: 140px;
-  margin-bottom: 24px;
 }
 
 .quick-links,
 .popular-links {
   width: 200px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list li {
+  margin-bottom: .9rem;
 }
 
 .contacts-links {
-  margin-bottom: 15px;
+  margin-bottom: .9rem;
   color: var(--white);
   text-decoration: none;
 }
@@ -371,7 +375,7 @@
 }
 
 .white-arrow-icon {
-  margin-right: 8px;
+  margin-right: .5rem;
   color: var(--white);
 }
 
@@ -383,7 +387,7 @@
 #newsletter-input {
   width: 150px;
   padding: 12px;
-  font-size: 1rem;
+
   font-weight: 400;
   line-height: 1.5;
   border: none;
@@ -396,10 +400,9 @@
 
 .newsletter-button {
   padding: 6px 12px;
-  border: none;
-  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  border: none;
   color: var(--white);
   background-color: var(--main-yellow);
 }
@@ -410,7 +413,7 @@
 }
 
 .follow-us-title {
-  margin: 24px 0 16px 0;
+  margin: 1.5rem 0 1rem 0;
   font-weight: 600;
   color: var(--white);
 }
@@ -418,8 +421,8 @@
 .follow-us-icons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  padding-top: 8px;
+  gap: 0.6rem;
+  padding-top: .5rem;
 }
 
 .follow-us-icons a {
@@ -433,7 +436,7 @@
 }
 
 .follow-us-icons a:hover {
-  color: #000;
+  color: var(--dark-blue);
   background-color: var(--white);
   transition: .5s;
 }
@@ -442,20 +445,20 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 120px;
+  padding: 1.5rem 7.5rem;
   line-height: 1.5;
   color: var(--white);
   background-color: var(--dark-blue);
 }
 
 footer a {
-  color: var(--main-yellow);
   text-decoration: none;
+  color: var(--main-yellow);
 }
 
 footer a:hover {
-  color: var(--white);
   text-decoration: none;
+  color: var(--white);
   transition: .5s;
 }
 
