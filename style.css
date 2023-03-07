@@ -16,6 +16,7 @@
   padding: 0;
   font-family: var(--main-font);
   font-size: 16px;
+  scroll-behavior: smooth
 }
 
 .top-contacts-container {
@@ -464,4 +465,13 @@ footer a:hover {
 
 .footer-right {
   text-align: right;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  padding: 15px 20px;
+  color: var(--white);
+  background-color: var(--main-yellow);
 }
